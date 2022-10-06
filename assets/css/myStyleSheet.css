@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-weight: 400;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Raleway', sans-serif;
+}
+
+.banner {
+  background-image: url(../images/banner.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  position: relative;
+  text-align: center;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+label {
+  color: #C4C4C4;
+}
+
+.centeredText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.description {
+  border-top: 0.5px solid;
+  border-color: #1C2034;
+  border-bottom: 0.5px solid;
+}
+
+.descriptionInformation {
+  padding-left: 20px;
+}
+
+.descriptionAbout {
+  padding-right: 30px;
+  border-right: 0.5px solid;
+  border-color: #1C2034;
+}
+
+.navBreadcrumb {
+  margin-left: -30px;
+  /* display: flex;
+  flex-direction: row; */
+  align-items: baseline;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+  color: #000;
+  font-size: 20px;
+}
+
+button.btn.btn-link {
+  text-decoration: none;
+  color: #000;
+}
+
+::-webkit-file-upload-button {
+  background-color: none;
+  color: none;
+  border-style: 1px dotted !important;
+  /* padding: 1em; */
+}
+
+
+@media (max-width: 995px) and (min-width:250px) {
+  .description .descriptionAbout {
+    border: none;
+  }
+  .navbar-expand .navbar-nav .nav-link {
+    color: #000;
+    font-size: 14px;
+  }
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#btn {
+  border: 1.5px dotted #C4C4C4;
+  color: #C4C4C4;
+  background-color: #fff;
+  padding: 5px 30px;
+  font-size: 14px;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
