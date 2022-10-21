@@ -121,3 +121,11 @@ button.btn.btn-link {
   top: 0;
   opacity: 0;
 }
+
+#removeButton{
+  color: brown;
+}
+
+#removeExpButton{
+  color: brown;
+}
