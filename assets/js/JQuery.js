@@ -79,31 +79,16 @@ $(document).ready(function () {
     });
 
 
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    window.onload = function () {
-        //Reference the DropDownList.
-        var ddlYears = document.getElementById("startYearEdu");
- 
-        //Determine the Current Year.
-        var currentYear = (new Date()).getFullYear();
- 
-        //Loop and add the Year values to DropDownList.
-        for (var i = 1950; i <= currentYear; i++) {
-            var option = document.createElement("OPTION");
-            option.innerHTML = i;
-            option.value = i;
-            ddlYears.appendChild(option);
-        }
-    };
-
-    
 })
+$(document).ready(function () {
+    $(function () {
+        var option = function (i, j) {
+            return $("<option>").append(j + 1900);
+        };
+
+        var options = (new Array(150) + "").split(",").map(option);
+
+        $(".year").append(options);
+    });
+
+});
